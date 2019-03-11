@@ -35,19 +35,19 @@ class PasswordTool:
         if len(self.password) >= 8:
             self.strength_level += 1
         else:
-            print('密码长度要求至少8位')
+            print('密码长度要求至少8位！')
 
         # 规则2 要有数字
         if self.check_number_exist():
             self.strength_level += 1
         else:
-            print('密码要求包含数字')
+            print('密码要求包含数字！')
 
         # 规则3 要有字母
         if self.check_letter_exist():
             self.strength_level += 1
         else:
-            print('密码要求包含字母')
+            print('密码要求包含字母！')
 
     # 类的方法
     def check_number_exist(self):
