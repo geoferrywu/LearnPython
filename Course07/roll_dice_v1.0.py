@@ -19,7 +19,7 @@ def main():
     """
         主函数
     """
-    total_times = 1000
+    total_times = 100
     # 初始化列表【0，0，0，0，0，0】
     result_list = [0] * 6
 
