@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="559412cd-98d9-4df9-aded-11c34265f9e1" name="Default Changelist" comment="" />
+    <list default="true" id="559412cd-98d9-4df9-aded-11c34265f9e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Course07.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Course07.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roll_dice_v4.0.py" beforeDir="false" afterPath="$PROJECT_DIR$/roll_dice_v4.0.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +14,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/roll_dice_v4.0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+              <folding>
+                <element signature="e#424#437#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/roll_dice_v3.0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="337">
+              <caret line="69" column="14" lean-forward="true" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -32,9 +59,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="411" />
-    <option name="y" value="118" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="168" />
+    <option name="y" value="95" />
     <option name="width" value="1286" />
     <option name="height" value="818" />
   </component>
@@ -50,6 +77,20 @@
       <pane id="ProjectPane">
         <subPane>
           <expand>
+            <path>
+              <item name="Course07" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Course07" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Course07" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Course07" type="462c0819:PsiDirectoryNode" />
+              <item name="roll_dice_v3.0.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="Course07" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Course07" type="462c0819:PsiDirectoryNode" />
+              <item name="roll_dice_v4.0.py" type="8704e2dd:PyFileNode" />
+            </path>
             <path>
               <item name="Course07" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
@@ -233,14 +274,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="411" y="118" width="1286" height="818" extended-state="0" />
+    <frame x="-8" y="-8" width="1665" height="973" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19176398" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39035088" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.318236" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -261,26 +303,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="New Class" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/roll_dice_v4.0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#366#379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/roll_dice_v3.0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
-          <folding>
-            <element signature="e#281#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/roll_dice_v2.0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -292,6 +314,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roll_dice_v3.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="69" column="14" lean-forward="true" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roll_dice_v4.0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="56" column="2" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+          <folding>
+            <element signature="e#424#437#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

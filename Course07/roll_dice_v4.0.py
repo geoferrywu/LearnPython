@@ -54,7 +54,6 @@ def main():
     plt.title('骰子点数统计')
     plt.xlabel('点数')
     plt.ylabel('频率')
-    plt.hist()
 
     plt.show()
 
