@@ -61,7 +61,7 @@ def cal_co_iaqi(co_val):
     return iaqi
 
 
- def cal_aqi(param_list):
+def cal_aqi(param_list):
     """
         AQI计算
     """
