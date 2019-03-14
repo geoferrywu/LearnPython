@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="559412cd-98d9-4df9-aded-11c34265f9e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/roll_dice_v5.0.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +27,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/roll_dice_v5.0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
+            <state relative-caret-position="330">
               <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="e#485#498#0" expanded="true" />
@@ -82,11 +81,6 @@
             <path>
               <item name="Course07" type="b2602c69:ProjectViewProjectNode" />
               <item name="Course07" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Course07" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Course07" type="462c0819:PsiDirectoryNode" />
-              <item name="roll_dice_v5.0.py" type="8704e2dd:PyFileNode" />
             </path>
             <path>
               <item name="Course07" type="b2602c69:ProjectViewProjectNode" />
@@ -274,19 +268,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552484310096</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new class">
+      <created>1552548163820</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552548163820</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="277" y="77" width="1286" height="818" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34210527" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34210527" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -305,7 +305,8 @@
     <MESSAGE value="change by pycharm" />
     <MESSAGE value="New Class" />
     <MESSAGE value="miss fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="miss fix" />
+    <MESSAGE value="new class" />
+    <option name="LAST_COMMIT_MESSAGE" value="new class" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/roll_dice_v2.0.py">
@@ -341,7 +342,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/roll_dice_v5.0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
+        <state relative-caret-position="330">
           <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="e#485#498#0" expanded="true" />
