@@ -34,6 +34,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
+
 def get_city_aqi(city_pinyin):
     """
         获取城市的AQI
