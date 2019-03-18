@@ -41,7 +41,7 @@ def main():
         主函数
     """
     aqi_data = pd.read_csv('china_city_aqi.csv')
-    print('基本信息：')
+    print('基本信息：', type(aqi_data))
     print(aqi_data.info())
 
     print('数据预览：')
