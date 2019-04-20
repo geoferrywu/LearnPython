@@ -1,5 +1,6 @@
 
 import os
+import shutil
 
 curdir = os.path.dirname(__file__)
 
