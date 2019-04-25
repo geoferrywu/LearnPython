@@ -1,5 +1,5 @@
 
-# import xml.sax.xmlreader
+
 from xml import sax
 
 
@@ -37,8 +37,8 @@ class MySaxHandler(sax.ContentHandler):
         for key,value in attrs.items():
             print('  {}="{}"'.format(key , value))
 
-def test_SAX():
-    ''' 解析XML字符串
+def test_SAX_1():
+    # 解析XML字符串
     import xml.parsers
     import xml.parsers.expat
 
@@ -49,10 +49,11 @@ def test_SAX():
     parser.EndElementHandler = handler.endElement
     parser.CharacterDataHandler = handler.characters
     parser.Parse(xmlstr)
-    # 解析XML文件
+    # 也可解析XML文件
     parser.ParseFile(open(xmlfile,'rb'))
-    '''
 
+
+def test_SAX_2():
     # 解析XML文件
     xml_parser = sax.make_parser()
     # 关闭命名空间
@@ -62,11 +63,38 @@ def test_SAX():
     xml_parser.setContentHandler(handler)
     xml_parser.parse(xmlfile)
 
+
+def test_DOM():
+    '''
+        已知XML结构的情况下用DOM
+    '''
+    import xml.dom.minidom
+
+    dom = xml.dom.minidom.parse(xmlfile)  #打开xml文档
+    root = dom.documentElement            #得到xml文档对象
+    print(root)
+    print("nodeName:", root.nodeName)        #每一个结点都有它的nodeName，nodeValue，nodeType属性
+    print("nodeValue:", root.nodeValue)      #nodeValue是结点的值，只对文本结点有效
+    print("nodeType:", root.nodeType)
+    print("ELEMENT_NODE:", root.ELEMENT_NODE)
+
+    root2 = root.getElementsByTagName('UNITDATA') # 返回符合条件的节点列表
+    print(root2)
+    print("nodeName:", root2[0].nodeName)      
+    print("nodeValue:", root2[0].nodeValue)    
+    print("nodeType:", root2[0].nodeType)
+    print("ELEMENT_NODE:", root2[0].ELEMENT_NODE)
+
+
+def test():
+    test_DOM()
+
+
 def main():
     """
         主函数
     """
-    test_SAX()
+    test()
 
 if __name__ == '__main__':
     main()
