@@ -2,7 +2,7 @@
 from functools import reduce
 
 def multi(a,b):
-    return a*b
+    return a+b
 
 def test():
     # 生成一个列表（可迭代对象）

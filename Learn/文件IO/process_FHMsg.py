@@ -48,7 +48,7 @@ def get_msgfile_list(lang):
     return filelist
 
 
-def merage_dict(dict_m, dict_l):
+def merge_dict(dict_m, dict_l):
     '''
         合并文言字典
     '''
@@ -163,10 +163,10 @@ def process_filelist(filelist):
             if os.path.isfile(next_path):
                 dict_next = get_msg_dict(next_path)
                 # 合并文言字典
-                errcnt += merage_dict(dict_main, dict_next)
+                errcnt += merge_dict(dict_main, dict_next)
             else:
                 filemiss += 1
-                merage_dict(dict_main, {})
+                merge_dict(dict_main, {})
 
         make_csv_file(dict_main.values(), '_{}_{}_'.format(filemiss, errcnt) + file_name.split('_')[0])
 
