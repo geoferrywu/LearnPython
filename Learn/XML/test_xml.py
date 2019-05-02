@@ -70,25 +70,74 @@ def test_DOM():
         已知XML结构的情况下用DOM
     '''
     import xml.dom.minidom
-
+    
     dom = xml.dom.minidom.parse(xmlfile)  #打开xml文档
     root = dom.documentElement            #得到xml文档对象
     print(root)
+    print(root.childNodes)
     print("nodeName:", root.nodeName)        #每一个结点都有它的nodeName，nodeValue，nodeType属性
     print("nodeValue:", root.nodeValue)      #nodeValue是结点的值，只对文本结点有效
     print("nodeType:", root.nodeType)
     print("ELEMENT_NODE:", root.ELEMENT_NODE)
 
     root2 = root.getElementsByTagName('UNITDATA') # 返回符合条件的节点列表
-    print(root2)
+    
     print("nodeName:", root2[0].nodeName)      
     print("nodeValue:", root2[0].nodeValue)    
     print("nodeType:", root2[0].nodeType)
     print("ELEMENT_NODE:", root2[0].ELEMENT_NODE)
+    
+    print(root2[0].childNodes)
+
+    for node in root2[0].childNodes:
+        if node.nodeType==1:
+            print(node.nodeName,node.attributes)
+
+    # with open('d:\\dom_write.xml','w',encoding='UTF-8',newline='') as fh:
+    #         dom.writexml(fh,indent='',addindent='  ',newl='',encoding='UTF-8')
 
 
+def test_elementTree():
+    try:
+        import xml.etree.cElementTree as ET
+    except ImportError:
+        import xml.etree.ElementTree as ET
+
+    # 解析XML文件
+    tree = ET.parse(xmlfile)  # <class 'xml.etree.ElementTree.ElementTree'>
+    root = tree.getroot()     # 获取根节点 <Element 'data' at 0x02BF6A80>
+    # print(root.tag, ":", root.attrib) # 打印根元素的tag和属性
+    unitdata = root[0]        # 获取unitdata节点
+    # print(unitdata.tag, ":", unitdata.attrib) # 打印根元素的tag和属性
+    node = unitdata[0]
+    print(node.tag, ":", node.attrib) # 打印根元素的tag和属性
+    node.attrib ={}
+
+    tree.write('d:\\out.xml')
+
+
+def test_new_xml():
+    try:
+        import xml.etree.cElementTree as ET
+    except ImportError:
+        import xml.etree.ElementTree as ET
+
+    # root = ET.ElementTree('Reference')
+    root = ET.Element('Reference')
+    root.text = '\n  '
+    unitdata = ET.SubElement(root,'UNITDATA', {})
+    unitdata.text = '\n    '
+    unitdata.tail = '\n'
+    node=ET.SubElement(unitdata,'model',{'name':'model'})
+    node.tail = '\n  '
+    # root.append(unitdata)
+    tree=ET.ElementTree(root)
+
+    tree.write('d:\\out.xml',encoding='UTF-8',xml_declaration=True)
+    
+    
 def test():
-    test_DOM()
+    test_new_xml()
 
 def main():
     """

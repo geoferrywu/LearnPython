@@ -1,6 +1,11 @@
 
 import os
 
+try:
+    import xml.etree.cElementTree as ET
+except ImportError:
+    import xml.etree.ElementTree as ET
+
 from openpyxl import load_workbook
 from openpyxl import Workbook
 
@@ -58,10 +63,6 @@ def make_csv_header():
     return [head1,head2]
 
 def parseXMLbyElementTree(xmlfile):
-    try:
-        import xml.etree.cElementTree as ET
-    except ImportError:
-        import xml.etree.ElementTree as ET
     
     # 外部参照的设定对话框属性个数列表
     diagAttrbLenList = list(map(lambda x:len(attrDict[x]),diagList))
@@ -86,7 +87,6 @@ def parseXMLbyElementTree(xmlfile):
     # print(unitdata.tag, ":", unitdata.attrib) # 打印根元素的tag和属性
     
     err = False
-    # lines = [make_csv_header()]
     lines = make_csv_header()
     for node in unitdata:
         # print('node={}'.format(node.tag))
@@ -188,6 +188,37 @@ def process_filelist(filelist):
 
 def xml2xlsx():
     process_filelist(get_xmlfile_list())
+
+def xlsx2xml():
+    pass
+    # 打开xlsx文件
+    # 枚举sheet
+        # process_ws2xml(ws,sheetname)
+
+def process_ws2xml(ws,sheetname):
+    pass
+    # 初始化xml文件
+    # 读取sheet各行内容
+        # process_xls_line(line) 返回tag名，tag属性集合，setting属性集合
+        # tag生成subElement，加入xmlTree
+    # save_xml(xmlRoot,sheetname)
+
+def process_xls_line(line):
+    pass
+    # 取出line的unitAttribList部分，生成字典
+    # 根据line的settingType部分，生成setting字典
+    # 返回
+
+def save_xml(xmlRoot,sheetname):
+
+    tree=ET.ElementTree(xmlRoot)
+
+    # 保存xml文件
+    dir = os.path.join(os.getcwd(), 'Result')
+    if not os.path.isdir(dir):
+        os.mkdir(dir)
+    fn = os.path.join(dir,'{}_UnitData.xml'.format(sheetname))
+    tree.write(fn,encoding='UTF-8',xml_declaration=True)
 
 def main():
     """

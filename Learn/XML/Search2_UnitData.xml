@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Reference>
+  <UNITDATA>
+    <ModelRegist no="-1" ident="ModelRegist" setEnable="0" getEnable="0" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="1" />
+    <ModelRegistAct no="-1" ident="ModelRegistAct" setEnable="0" getEnable="0" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="" isAction="1">
+      <setting Type="ProcItemDialog.FigureDialog" ThroughEnable="false" DisplaySubNo="10000" FigureNo="0" FigureMax="8" ActionType="Set" ActionIdent="autoReference" ActionValue="0"/>
+    </ModelRegistAct>
+    <accuracy no="120" ident="accuracy" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ValueSetDialog" DecimalPlaces="1" Max="10" Min="1" />
+    </accuracy>
+    <stability no="121" ident="stability" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ValueSetDialog" DecimalPlaces="1" Max="10" Min="1" />
+    </stability>
+    <rotationStepSettingMode no="122" ident="rotationStepSettingMode" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+       <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_ComboBox_RotateStep_Auto:Flow_ComboBox_RotateStep_Manual" ValueList="0:1" />
+    </rotationStepSettingMode>
+    <rotationStep no="123" ident="rotationStep" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ValueSetDialog" DecimalPlaces="1" Max="30" Min="0" />
+    </rotationStep>
+    <modelType no="124" ident="modelType" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+       <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_ComboBox_Model_SmallSize:Flow_ComboBox_Model_HighSpeed" ValueList="0:1" />
+    </modelType>
+    <saveModelImageEnable no="300" ident="saveModelImageEnable" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_DoNot:Flow_Do" ValueList="0:1" />
+    </saveModelImageEnable>
+    <DetectionPoint no="-1" ident="DetectionPoint" setEnable="0" getEnable="0" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="1" />
+    <detectionPosX no="131" ident="detectionPosX" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.PointDialog" ThroughEnable="False" DisplaySubNo="10008" DecimalPlaces="4" MaxX="99999.9999" MinX="0" MaxY="99999.9999" MinY="0" DataIdentX="detectionPosX" DataIdentY="detectionPosY" />
+    </detectionPosX>
+    <detectionPosY no="132" ident="detectionPosY" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.PointDialog" ThroughEnable="False" DisplaySubNo="10008" DecimalPlaces="4" MaxX="99999.9999" MinX="0" MaxY="99999.9999" MinY="0" DataIdentX="detectionPosX" DataIdentY="detectionPosY" />
+    </detectionPosY>
+    <RefPos no="-1" ident="RefPos" setEnable="0" getEnable="0" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="1" />
+    <referencePosX no="141" ident="referencePosX" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.PointDialog" ThroughEnable="False" DisplaySubNo="10016" DecimalPlaces="4" MaxX="99999.9999" MinX="0" MaxY="99999.9999" MinY="0" DataIdentX="referencePosX" DataIdentY="referencePosY" />
+    </referencePosX>
+    <referencePosY no="142" ident="referencePosY" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.PointDialog" ThroughEnable="False" DisplaySubNo="10016" DecimalPlaces="4" MaxX="99999.9999" MinX="0" MaxY="99999.9999" MinY="0" DataIdentX="referencePosX" DataIdentY="referencePosY" />
+    </referencePosY>
+    <referencePosAngle no="144" ident="referencePosAngle" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ValueSetDialog" DecimalPlaces="4" Max="180" Min="-180" />
+    </referencePosAngle>
+    <updateAngleFlg no="143" ident="updateAngleFlg" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_DoNotUpdateAngle:Flow_UpdateAngle" ValueList="0:1" />
+    </updateAngleFlg>
+    <beforeScrollRefMode no="145" ident="beforeScrollRefMode" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_DoNotUse:Flow_Use" ValueList="0:1" />
+    </beforeScrollRefMode>
+    <beforeScrollRefPosX no="146" ident="beforeScrollRefPosX" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="" isGroup="" />
+    <beforeScrollRefPosY no="147" ident="beforeScrollRefPosY" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="" isGroup="" />
+    <beforeScrollRefAngle no="148" ident="beforeScrollRefAngle" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="" isGroup="" />
+    <MeasureParam no="-1" ident="MeasureParam" setEnable="0" getEnable="0" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="1" />
+    <candidateLevel no="153" ident="candidateLevel" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ValueSetDialog" DecimalPlaces="0" Max="100" Min="0" />
+    </candidateLevel>
+    <rotation no="150" ident="rotation" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_Disable:Flow_Enable" ValueList="0:1" />
+    </rotation>
+    <startAngle no="151" ident="startAngle" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="0" Max="180" Min="-180" DataIdentUppValue="endAngle" DataIdentLowValue="startAngle" />
+    </startAngle>
+    <endAngle no="152" ident="endAngle" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="0" Max="180" Min="-180" DataIdentUppValue="endAngle" DataIdentLowValue="startAngle" />
+    </endAngle>
+    <multiExtractCount no="154" ident="multiExtractCount" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_DoNot:Flow_Do" ValueList="0:1" />
+    </multiExtractCount>
+    <maxExtractCount no="155" ident="maxExtractCount" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ValueSetDialog" DecimalPlaces="0" Max="128" Min="1" />
+    </maxExtractCount>
+    <sortType no="156" ident="sortType" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_ComboBox_Sort_CAsc:Flow_ComboBox_Sort_CDesc:Flow_ComboBox_Sort_XAsc:Flow_ComboBox_Sort_XDesc:Flow_ComboBox_Sort_YAsc:Flow_ComboBox_Sort_YDesc" ValueList="0:1:2:3:4:5" />
+    </sortType>
+    <searchNo no="157" ident="searchNo" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ValueSetDialog" DecimalPlaces="0" Max="127" Min="0" />
+    </searchNo>
+    <lowerCount no="200" ident="lowerCount" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="4" Max="128" Min="0" DataIdentUppValue="upperCount" DataIdentLowValue="lowerCount" />
+    </lowerCount>
+    <upperCount no="201" ident="upperCount" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="4" Max="128" Min="0" DataIdentUppValue="upperCount" DataIdentLowValue="lowerCount" />
+    </upperCount>
+    <lowerX no="202" ident="lowerX" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="4" Max="99999.9999" Min="-99999.9999" DataIdentUppValue="upperX" DataIdentLowValue="lowerX" />
+    </lowerX>
+    <upperX no="203" ident="upperX" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="4" Max="99999.9999" Min="-99999.9999" DataIdentUppValue="upperX" DataIdentLowValue="lowerX" />
+    </upperX>
+    <lowerY no="204" ident="lowerY" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="4" Max="99999.9999" Min="-99999.9999" DataIdentUppValue="upperY" DataIdentLowValue="lowerY" />
+    </lowerY>
+    <upperY no="205" ident="upperY" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="4" Max="99999.9999" Min="-99999.9999" DataIdentUppValue="upperY" DataIdentLowValue="lowerY" />
+    </upperY>
+    <lowerAngle no="206" ident="lowerAngle" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="0" Max="180" Min="-180" DataIdentUppValue="upperAngle" DataIdentLowValue="lowerAngle" />
+    </lowerAngle>
+    <upperAngle no="207" ident="upperAngle" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="0" Max="180" Min="-180" DataIdentUppValue="upperAngle" DataIdentLowValue="lowerAngle" />
+    </upperAngle>
+    <lowerCorrelation no="208" ident="lowerCorrelation" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="0" Max="100" Min="0" DataIdentUppValue="upperCorrelation" DataIdentLowValue="lowerCorrelation" />
+    </lowerCorrelation>
+    <upperCorrelation no="209" ident="upperCorrelation" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.LimitSetDialog" SliderEnable="false" DecimalPlaces="0" Max="100" Min="0" DataIdentUppValue="upperCorrelation" DataIdentLowValue="lowerCorrelation" />
+    </upperCorrelation>
+    <OutputParam no="-1" ident="OutputParam" setEnable="0" getEnable="0" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="1" />
+    <outputCoordinate no="100" ident="outputCoordinate" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_ComboBox_outputCoordinate_1:Flow_ComboBox_outputCoordinate_2" ValueList="0:1" />
+    </outputCoordinate>
+    <calibration no="101" ident="calibration" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_OFF_En:Flow_ON_En" ValueList="0:1" />
+    </calibration>
+    <overallJudge no="102" ident="overallJudge" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.ComboBoxDialog" MessageFileIdent="Search2" TextIdentList="Flow_Do:Flow_DoNot" ValueList="0:1" />
+    </overallJudge>
+    <areaFigure no="-1" ident="areaFigure" setEnable="0" getEnable="0" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="1"/>
+    <figArea0_count no="91000" ident="figArea0_count" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.FigureDialog" ThroughEnable="False" DisplaySubNo="10000" FigureNo="1" FigureMax="1" CircleMode="0" LineArrowMode="True" NotOnlyFigureEnabled="False" OrNotEnabled="False" DeleteDisable="true" />
+    </figArea0_count>
+    <figArea0_fig0_type no="91001" ident="figArea0_fig0_type" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.FigureDialog" ThroughEnable="False" DisplaySubNo="10000" FigureNo="1" FigureMax="1" CircleMode="0" LineArrowMode="True" NotOnlyFigureEnabled="False" OrNotEnabled="False" DeleteDisable="true" />
+    </figArea0_fig0_type>
+    <figArea0_fig0_mode no="91002" ident="figArea0_fig0_mode" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.FigureDialog" ThroughEnable="False" DisplaySubNo="10000" FigureNo="1" FigureMax="1" CircleMode="0" LineArrowMode="True" NotOnlyFigureEnabled="False" OrNotEnabled="False" DeleteDisable="true" />
+    </figArea0_fig0_mode>
+    <figArea0_fig0_box_X0 no="91014" ident="figArea0_fig0_box_X0" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.FigureDialog" ThroughEnable="False" DisplaySubNo="10000" FigureNo="1" FigureMax="1" CircleMode="0" LineArrowMode="True" NotOnlyFigureEnabled="False" OrNotEnabled="False" DeleteDisable="true" />
+    </figArea0_fig0_box_X0>
+    <figArea0_fig0_box_Y0 no="91015" ident="figArea0_fig0_box_Y0" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.FigureDialog" ThroughEnable="False" DisplaySubNo="10000" FigureNo="1" FigureMax="1" CircleMode="0" LineArrowMode="True" NotOnlyFigureEnabled="False" OrNotEnabled="False" DeleteDisable="true" />
+    </figArea0_fig0_box_Y0>
+    <figArea0_fig0_box_X1 no="91016" ident="figArea0_fig0_box_X1" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.FigureDialog" ThroughEnable="False" DisplaySubNo="10000" FigureNo="1" FigureMax="1" CircleMode="0" LineArrowMode="True" NotOnlyFigureEnabled="False" OrNotEnabled="False" DeleteDisable="true" />
+    </figArea0_fig0_box_X1>
+    <figArea0_fig0_box_Y1 no="91017" ident="figArea0_fig0_box_Y1" setEnable="1" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.FigureDialog" ThroughEnable="False" DisplaySubNo="10000" FigureNo="1" FigureMax="1" CircleMode="0" LineArrowMode="True" NotOnlyFigureEnabled="False" OrNotEnabled="False" DeleteDisable="true" />
+    </figArea0_fig0_box_Y1>
+    <figArea0_update no="91099" ident="figArea0_update" setEnable="1" getEnable="" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="1" outputParam="" isGroup="">
+      <setting Type="ProcItemDialog.FigureDialog" ThroughEnable="False" DisplaySubNo="10000" FigureNo="1" FigureMax="1" CircleMode="0" LineArrowMode="True" NotOnlyFigureEnabled="False" OrNotEnabled="False" DeleteDisable="true" />
+    </figArea0_update>
+    <judge no="0" ident="judge" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <count no="14" ident="count" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="1" LowerDataIdent="lowerCount" UpperDataIdent="upperCount" inputParam="" outputParam="1" isGroup="" />
+    <correlation no="5" ident="correlation" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="1" LowerDataIdent="lowerCorrelation" UpperDataIdent="upperCorrelation" inputParam="" outputParam="1" isGroup="" />
+    <positionX no="6" ident="positionX" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="1" LowerDataIdent="lowerX" UpperDataIdent="upperX" inputParam="" outputParam="1" isGroup="" />
+    <positionY no="7" ident="positionY" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="1" LowerDataIdent="lowerY" UpperDataIdent="upperY" inputParam="" outputParam="1" isGroup="" />
+    <angle no="8" ident="angle" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="1" LowerDataIdent="lowerAngle" UpperDataIdent="upperAngle" inputParam="" outputParam="1" isGroup="" />
+    <referenceX no="9" ident="referenceX" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <referenceY no="10" ident="referenceY" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <referenceAngle no="11" ident="referenceAngle" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <detectionX no="12" ident="detectionX" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <detectionY no="13" ident="detectionY" setEnable="" getEnable="1" multiData="0" multiNum="" multiCalc="" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <loopStartResult isLoopStart="128" outputParam="1" />
+    <correlationNNN no="30000" ident="correlation" setEnable="" getEnable="1" multiData="1" multiNum="128" multiCalc="1" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <positionXNNN no="40000" ident="positionX" setEnable="" getEnable="1" multiData="1" multiNum="128" multiCalc="1" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <positionYNNN no="50000" ident="positionY" setEnable="" getEnable="1" multiData="1" multiNum="128" multiCalc="1" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <angleNNN no="60000" ident="angle" setEnable="" getEnable="1" multiData="1" multiNum="128" multiCalc="1" analyzable="" LowerDataIdent="" UpperDataIdent="" inputParam="" outputParam="1" isGroup="" />
+    <loopEndResult isLoopEnd="1" outputParam="1" />
+  </UNITDATA>
+  <REGIONDATA>
+    <Figure0 KeyNo="0" FigureKind="600" FigureMax="8" OrNotEnabled="1" DeleteDisable="0" AutoReference="autoReference" UnitDataToCsv="0" />
+    <Figure1 KeyNo="1" FigureKind="8" FigureMax="1" OrNotEnabled="0" DeleteDisable="1" UnitDataToCsv="1" />
+  </REGIONDATA>
+  <CAMERACALIBREF>
+    <CalibEnable no="8101" ident="CalibEnable" Value="1" />
+    <CalibModelNo no="8102" ident="CalibModelNo" Value="0" />
+    <CalibRegionNo no="8103" ident="CalibRegionNo" Value="1" />
+    <FigureNum0 no="8104" ident="FigureNum0" Value="8" />
+    <FigureNum1 no="8105" ident="FigureNum1" Value="1" />
+  </CAMERACALIBREF>
+</Reference>
